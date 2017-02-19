@@ -35,7 +35,7 @@ Finally, double-click on the `ScreenMirror.py`.
 If all goes well, the contents of the screen will now be mirrored on the keyboard.
 
 ## Problems?
-- Make sure the keyboard is not in "No Illumination" mode.  
+- Make sure the keyboard is not in "No Illumination" mode. All zones must NOT be in "No Illumination" mode for this to work.  
 - Try restarting the SteelSeries Engine.  
 - If you run into any exceptions, please post it on the issues tab.  
 
