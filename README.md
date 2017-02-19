@@ -34,4 +34,5 @@ And then you're good to go!
 Finally, double-click on the ScreenMirror.py.  
 Now the contents of the screen will be mirrored on the keyboard.
 
+# Problems?
 If you run into any exceptions, first try restarting the SteelSeries Engine, and if the problem persists, please post it on the issues tab.
