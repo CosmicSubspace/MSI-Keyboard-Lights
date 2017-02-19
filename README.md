@@ -10,14 +10,17 @@ Make your MSI G-Series laptop's RGB keyboard light up according to what's displa
 - Python 3.x (Tested on 3.3.4)
 
 # Installation
+### Step 1: GoLisp Handler
 First, you need to copy the `freedraw.lsp` file to SteelSeries Engine's folder.  
 On windows, it is located at:  
 `C:\ProgramData\SteelSeries\SteelSeries Engine 3\hax0rBindings`    
 copy the `freedraw.lsp` into that folder.  
 The ProgramData folder is usually hidden by default. If you can't find the folder, try enabling hidden folders in the windows explorer settings.  
 
+### Step 2: Python
 Now, you need to set up the python script. If you don't have Python, install the 3.x version. The script was only tested on Python 3.3.4, but other 3.x versions would work fine. (Probably)
 
+### Step 3: Libraries
 With Python installed, you have to install some libraries. The Python script uses the following external libraries:
 
 - Requests
@@ -28,6 +31,7 @@ You can easily install these libraries using pip. Open up the command prompt, na
 and `pip install pillow`  
 And then you're good to go!
 
+### Step 4: Running the script
 Finally, double-click on the `ScreenMirror.py`.  
 If all goes well, the contents of the screen will now be mirrored on the keyboard.
 
