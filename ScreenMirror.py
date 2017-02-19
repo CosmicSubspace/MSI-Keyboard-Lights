@@ -140,15 +140,21 @@ def screenshot():
 #Prepare the dict that will actually be sent to the SteelSeries Engine.
 def prepare_post_data(colors):
     res=dict()
-    res["r1"]=round(colors[0].r*255)
-    res["g1"]=round(colors[0].g*255)
-    res["b1"]=round(colors[0].b*255)
-    res["r2"]=round(colors[1].r*255)
-    res["g2"]=round(colors[1].g*255)
-    res["b2"]=round(colors[1].b*255)
-    res["r3"]=round(colors[2].r*255)
-    res["g3"]=round(colors[2].g*255)
-    res["b3"]=round(colors[2].b*255)
+    res["r1"]=colors[0].r*255
+    res["g1"]=colors[0].g*255
+    res["b1"]=colors[0].b*255
+    res["r2"]=colors[1].r*255
+    res["g2"]=colors[1].g*255
+    res["b2"]=colors[1].b*255
+    res["r3"]=colors[2].r*255
+    res["g3"]=colors[2].g*255
+    res["b3"]=colors[2].b*255
+    return res
+
+def round_data(d):
+    res=dict()
+    for i in d:
+        res[i]=round(d[i])
     return res
 
 #A "Lowpass" to make the color transition smoother.
@@ -222,4 +228,4 @@ while True:
     updates+=1
 
     #We now send the data to the Steelseries engine.
-    event_send("LIGHTS",current_data)
+    event_send("LIGHTS",round_data(current_data))
