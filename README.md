@@ -10,14 +10,13 @@ Make your MSI G-Series laptop's RGB keyboard light up according to what's displa
 - Python 3.x (Tested on 3.3.4)
 
 # Installation
-First, you need to copy the `freedraw.lsp` file to SteelSeries Engine's folder.
-
+First, you need to copy the `freedraw.lsp` file to SteelSeries Engine's folder.  
 On windows, it is located at:  
 `C:\ProgramData\SteelSeries\SteelSeries Engine 3\hax0rBindings`    
 copy the `freedraw.lsp` into that folder.  
 The ProgramData folder is usually hidden by default. If you can't find the folder, try enabling hidden folders in the windows explorer settings.  
 
-Now, you need to set up the python script. If you don't have Python, install the 3.x version. The script was only tested on Python 3.3.4, but other versions would work fine. (Probably)
+Now, you need to set up the python script. If you don't have Python, install the 3.x version. The script was only tested on Python 3.3.4, but other 3.x versions would work fine. (Probably)
 
 With Python installed, you have to install some libraries. The Python script uses the following external libraries:
 
