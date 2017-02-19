@@ -1,7 +1,7 @@
 # MSI-Keyboard-Lights
 Make your MSI G-Series laptop's RGB keyboard light up according to what's displayed on the screen.
 
-[Video demo](https://youtu.be/7z4rpFJoWxk)
+[Video demo](https://youtu.be/LV5GNS1c5tg)
 
 # Requirements
 - MSI Laptop with 3-zone RGB lighting
