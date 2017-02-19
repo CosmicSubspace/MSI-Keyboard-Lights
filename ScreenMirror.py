@@ -11,7 +11,6 @@ import sys
 
 # https://github.com/SteelSeries/gamesense-sdk
 
-
 #This will make it so the console won't close on its own when an exception is raised.
 def show_exception_and_exit(exc_type, exc_value, tb):
     import traceback
@@ -46,7 +45,7 @@ def post(addr_append,dat):
     else:
         #print("POST success.")
         pass
-    
+
 
 #Register our "Game"
 def game_register():
@@ -96,8 +95,8 @@ class Color():
         self.r=rgb_new[0]
         self.g=rgb_new[1]
         self.b=rgb_new[2]
-        
-        
+
+
     def __str__(self):
         return "[{:.02f},{:.02f},{:.02f}]".format(self.r,self.g,self.b)
 
@@ -107,13 +106,13 @@ class Color():
 #But median looks a bit better imo
 def screenshot():
     res=[]
-    
+
     img=PIL.ImageGrab.grab()
-    
+
     w=img.size[0]//3
     h=img.size[1]
-    
-    
+
+
     img_r=img.crop(box=(w*0,0,w*1,h))
     img_r_avg=PIL.ImageStat.Stat(img_r).median
     res.append(
@@ -171,17 +170,17 @@ updates=0
 #So, we loop every ~0.02 seconds, and unless ~0.2 seconds has passed, we only smooth the value and send the value
 #to the SteelSeries Engine.
 while True:
-    
+
     #This value can be reduced to increase smoothness.
     #However, going lower than 0.02 doesn't really make a difference.
     time.sleep(0.02) ###Magic number: loop frequency.
-    
+
     current_time=time.time()
     time_delta=current_time-last_time
 
     #Only if 0.2 seconds have passed do we take another screenshot.
     if time_delta>0.2:  ##Magic number: screenshot frequency.
-        
+
         last_time=current_time
 
         #Take a screenshot!
@@ -215,8 +214,8 @@ while True:
     #The higher the lowpass ratio (0.85 in this case), the smoother(and slower) the transition.
     lowpass(current_data,newest_data,0.85) ##Magic number: Lowpass strength
 
-    
+
     updates+=1
-    
+
     #We now send the data to the Steelseries engine.
     event_send("LIGHTS",current_data)
