@@ -35,6 +35,11 @@ Finally, double-click on the ScreenMirror.py.
 Now the contents of the screen will be mirrored on the keyboard.
 
 # Problems?
-Make sure the keyboard is not in "No Illumination" mode.
-Try restarting the SteelSeries Engine.
-If you run into any exceptions, please post it on the issues tab.
+- Make sure the keyboard is not in "No Illumination" mode.  
+- Try restarting the SteelSeries Engine.  
+- If you run into any exceptions, please post it on the issues tab.  
+
+#Technical stuff
+The [SteelSeries Gamesense API documentation](https://github.com/SteelSeries/gamesense-sdk) is worth a read, if you want to understand what's going on in this script.  
+Other than that, I've left a handful of comments in the python script, so feel free to read through it.  
+For the lisp script, all it's doing is taking values from the Gamesense POST data and directly pushing those values to the SteelSeries Engine.

@@ -1,3 +1,6 @@
+# by CosmicSubspace
+# https://github.com/CosmicSubspace/MSI-Keyboard-Lights
+
 import requests
 import json
 import os
