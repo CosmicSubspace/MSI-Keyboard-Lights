@@ -7,7 +7,6 @@ Make your MSI G-Series laptop's RGB keyboard light up according to what's displa
 - MSI Laptop with 3-zone RGB lighting
 - Windows
 - SteelSeries Engine installed
-- Python 3.x (Tested on 3.3.4)
 
 # Installation
 ### Step 1: Copying the GoLisp Handler
