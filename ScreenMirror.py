@@ -45,6 +45,7 @@ def post(addr_append,dat):
     if r.status_code != 200:
         print("POST unsuccessful. contents:")
         print(r.text)
+        raise
     else:
         #print("POST success.")
         pass
