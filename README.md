@@ -27,9 +27,9 @@ With Python installed, you have to install some libraries. The Python script use
 - Requests
 - Pillow
 
-You can easily install these libraries using pip. Open up the command prompt, navigate to the `C:\Python3x\Scripts` folder and then execute  
-`pip install requests`  
-and `pip install pillow`  
+You can easily install these libraries using pip. Open up the command prompt, and then execute  
+`py -m pip install requests`  
+and `py -m pip install pillow`  
 And then you're good to go!
 
 #### Step 4: Running the script
@@ -47,7 +47,7 @@ Please note that if you do this, you won't be able to see error messages, and yo
 
 ## I want to use Python 2.7!
 Well, okay! Just run `ScreenMirror-python2.7.py` instead of `ScreenMirror.py`.  
-The Python2.7 version also requires the `Future` library: `pip install future`
+The Python2.7 version also requires the `Future` library: `py -m pip install future`
 
 ## Technical stuff
 The [SteelSeries Gamesense API documentation](https://github.com/SteelSeries/gamesense-sdk) is worth a read, if you want to understand what's going on in this script.  
