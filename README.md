@@ -9,10 +9,10 @@ Make your MSI G-Series laptop's RGB keyboard light up according to what's displa
 - SteelSeries Engine installed
 
 ## Installation
-First, download the repository using the download button on the top right side of this page.
+First of all, download the repository using the download button on the top right side of this page.
 
 #### Step 1: Copying the GoLisp Handler
-First, you need to copy the `freedraw.lsp` file to SteelSeries Engine's folder.  
+To begin, you need to copy the `freedraw.lsp` file to SteelSeries Engine's folder.  
 On windows, it is located at `C:\ProgramData\SteelSeries\SteelSeries Engine 3\hax0rBindings`.  
 Copy the `freedraw.lsp` into that folder.
 
@@ -27,9 +27,9 @@ With Python installed, you have to install some libraries. The Python script use
 - Requests
 - Pillow
 
-For those who are not familiar with Python, here's how to do it:  
-Go to start, and search for: 'cmd'. A program named 'Command Prompt' will be the first result. Open it up.  
-Now, in the black window that appeared, type in `py -m pip install requests` and press Enter. If it works, a bunch of things will appear on the command prompt, ending with 'Successfully installed...'  
+For those who are not familiar with Python, here's how to install them:  
+Go to start, and search for: `cmd`. A program named `Command Prompt` will be the first result. Open it up.  
+Now, in the black window that appeared, type in `py -m pip install requests` and press Enter. If it works, a bunch of things will appear on the command prompt, ending with `Successfully installed...`  
 If it worked, now type `py -m pip install pillow` and press Enter. If this command also succeeds, you're good to go!
 
 #### Step 4: Running the script
