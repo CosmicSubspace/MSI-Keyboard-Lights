@@ -27,10 +27,10 @@ With Python installed, you have to install some libraries. The Python script use
 - Requests
 - Pillow
 
-You can easily install these libraries using pip. Open up the command prompt, and then execute  
-`py -m pip install requests`  
-and `py -m pip install pillow`  
-And then you're good to go!
+For those who are not familiar with Python, here's how to do it:  
+Go to start, and search for: 'cmd'. A program named 'Command Prompt' will be the first result. Open it up.  
+Now, in the black window that appeared, type in `py -m pip install requests` and press Enter. If it works, a bunch of things will appear on the command prompt, ending with 'Successfully installed...'  
+If it worked, now type `py -m pip install pillow` and press Enter. If this command also succeeds, you're good to go!
 
 #### Step 4: Running the script
 Finally, double-click on the `ScreenMirror.py`.  
