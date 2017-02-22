@@ -39,6 +39,7 @@ If all goes well, the contents of the screen will now be mirrored on the keyboar
 ## Problems?
 - Make sure the keyboard is not in "Disable Illumination" mode. All zones must NOT be in "Disable Illumination" mode!  
 - Try restarting the SteelSeries Engine.  
+- If the keyboard goes black while playing a game, try playing in windowed mode. The script cannot take a screenshot of a game in fullscreen mode, since the game writes directly to the screen. For games that do support it, using a borderless-windowed mode is optimal, since it will look just like fullscreen mode while allowing this script to take screenshots.  
 - If you run into any exceptions, please post it on the issues tab.  
 
 ## Make that console window go away!
