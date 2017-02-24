@@ -4,7 +4,7 @@ A set of scripts that makes your MSI G-Series laptop's RGB keyboard light up in 
 The keyboard will mirror what's displayed on the screen.  
 [Video demo](https://youtu.be/LV5GNS1c5tg)
 #### AudioAmplitude.py
-The keyboard will light up whenever there's a sound coming from your computer. The louder the sound, the brighter the keyboard.  
+The keyboard lights will react to your mic, or your computer's speaker output. The louder the sound, the brighter the keyboard.  
 [Video demo](https://youtu.be/rExPTK0rIv0)
 
 ## Requirements
@@ -96,7 +96,7 @@ For the lisp script, all it's doing is taking values from the Gamesense POST dat
 ## Changelog
 #### v0.1
  - initial release
- 
+
 #### v1.0
  - added AudioAmplitude.py
  - seperated modules so that it can be used as a library
