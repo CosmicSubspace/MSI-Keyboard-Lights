@@ -39,6 +39,11 @@ Now, in the black window that appeared, type in `py -m pip install requests` and
 If it worked, now type `py -m pip install pillow` and press Enter.  
 If that worked, now type `py -m pip install pyaudio` and press Enter. If all of them succeed, you're good to go!
 
+#### Step 3.5: Enabling Stereo Mix
+This step is only required if you'd like to use `AudioAmplitude.py`.  
+`AudioAmplitude.py` takes a microphone input and visualizes it on the keyboard. But most of the time you'd want a visualization of your computer's speaker output, not a mic input. So, we need a way to fake that speaker output as a mic input.  
+Fortunately, Realtek audio cards (which MSI laptops use) provide a way to do just that. However, this feature is disabled by default, so you'll have to enable it yourself. Follow [this guide](https://www.howtogeek.com/howto/39532/how-to-enable-stereo-mix-in-windows-7-to-record-audio/) on how to enable this feature.
+
 #### Step 4: Running the script
 Finally, double-click on the `ScreenMirror.py` or `AudioAmplitude.py`.  
 Note that running multiple scripts at once will cause erratic behavior.

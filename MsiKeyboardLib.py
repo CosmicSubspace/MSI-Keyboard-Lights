@@ -3,7 +3,6 @@
 ## Licensed under the MIT License.
 
 import requests
-import grequests
 import json
 import os
 import os.path

@@ -110,9 +110,13 @@ def cb(in_data,frame_count,time_info,status_flags):
 
 print("Which audio device should be used?")
 print("Some of them might not return a sound, and some may just throw an error.")
+print("A device called Stereo Mix is a input loopback for audio output, and should be selected if you want to visualize audio output.")
 print("If you don't know, just guess until you get the one you want.\n")
 for i in range(audio.get_device_count()):
-    print(i+1,audio.get_device_info_by_index(i)["name"],sep="\t")
+    try:
+        print(i+1,audio.get_device_info_by_index(i)["name"],sep="\t")
+    except UnicodeEncodeError:
+        print("???",sep="\t")
 idx=int(input("\nEnter index: "))-1
 
 ## PyAudio code.
