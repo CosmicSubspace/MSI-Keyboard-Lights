@@ -4,7 +4,7 @@ A set of scripts that makes your MSI G-Series laptop's RGB keyboard light up in 
 The keyboard will mirror what's displayed on the screen.  
 [Video demo](https://youtu.be/LV5GNS1c5tg)
 #### AudioAmplitude.py
-The keyboard lights will react to your mic, or your computer's speaker output. The louder the sound, the brighter the keyboard.  
+The keyboard lights will react to your computer's stereo speaker output. The louder the sound, the brighter the keyboard.  
 [Video demo](https://youtu.be/rExPTK0rIv0)
 
 ## Requirements
@@ -13,6 +13,8 @@ The keyboard lights will react to your mic, or your computer's speaker output. T
 - SteelSeries Engine installed
 
 ## Installation
+The installation is not so much of a one-click process, but it should not take too long either.
+
 First of all, download the repository using the download button on the top right side of this page, and extract the files to a folder.  
 The .py files must be located in a same folder - they reference each other, so putting them in different folder will cause an error.
 
