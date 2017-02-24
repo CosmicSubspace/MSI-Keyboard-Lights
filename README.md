@@ -13,7 +13,7 @@ The keyboard lights will react to your computer's stereo speaker output. The lou
 - SteelSeries Engine installed
 
 ## Installation
-The installation is not so much of a one-click process, but it should not take too long either.
+The installation is not really a one-click process, but it should not take too long either.
 
 First of all, download the repository using the download button on the top right side of this page, and extract the files to a folder.  
 The .py files must be located in a same folder - they reference each other, so putting them in different folder will cause an error.
