@@ -4,7 +4,7 @@ A set of scripts that makes your MSI G-Series laptop's RGB keyboard light up in 
 The keyboard will mirror what's displayed on the screen.  
 [Video demo](https://youtu.be/LV5GNS1c5tg)
 #### AudioAmplitude.py
-The keyboard will light up whenever there's a sound coming from you computer. The louder the sound, the brighter the keyboard.
+The keyboard will light up whenever there's a sound coming from your computer. The louder the sound, the brighter the keyboard.  
 [Video demo](https://youtu.be/rExPTK0rIv0)
 
 ## Requirements
@@ -29,9 +29,9 @@ Now, you need to set up the python script. If you don't have Python, [install th
 #### Step 3: Installing Libraries
 With Python installed, you have to install some libraries. The Python script uses the following external libraries:
 
-- Requests
-- Pillow
-- PyAudio
+- Requests (Required for both scripts)
+- Pillow (Required for `ScreenMirror.py`)
+- PyAudio (Required for `AudioAmplitude.py`)
 
 For those who are not familiar with Python, here's how to install them:  
 Go to start, and search for: `cmd`. A program named `Command Prompt` will be the first result. Open it up.  
@@ -39,12 +39,12 @@ Now, in the black window that appeared, type in `py -m pip install requests` and
 If it worked, now type `py -m pip install pillow` and press Enter.  
 If that worked, now type `py -m pip install pyaudio` and press Enter. If all of them succeed, you're good to go!
 
-#### Step 3.5: Enabling Stereo Mix
+#### Step 4: Enabling Stereo Mix
 This step is only required if you'd like to use `AudioAmplitude.py`.  
 `AudioAmplitude.py` takes a microphone input and visualizes it on the keyboard. But most of the time you'd want a visualization of your computer's speaker output, not a mic input. So, we need a way to fake that speaker output as a mic input.  
 Fortunately, Realtek audio cards (which MSI laptops use) provide a way to do just that. However, this feature is disabled by default, so you'll have to enable it yourself. Follow [this guide](https://www.howtogeek.com/howto/39532/how-to-enable-stereo-mix-in-windows-7-to-record-audio/) on how to enable this feature.
 
-#### Step 4: Running the script
+#### Step 5: Running the script
 Finally, double-click on the `ScreenMirror.py` or `AudioAmplitude.py`.  
 Note that running multiple scripts at once will cause erratic behavior.
 
@@ -61,8 +61,8 @@ Please note that if you do this, you won't be able to see error messages, and yo
 ## API
 The `MsiKeyboardLib.py` is basically a wrapper for the SteelSeriesEngine's HTTP API.  
 If you'd like to make your own python script for controlling the keyboard lights, simply import `MsiKeyboardLib.py` and then you can easily control the keyboard lights through simple python calls!  
-Before doing this, you have to follow step 1 of the install instructions before you can utilize the library.  
-Sample code that illustrates most of the functions of this library:  
+Before doing this, you have to follow step 1 of the install instructions before you can utilize the module.  
+Sample code that illustrates most of the functions of this module:  
 ```python
 import MsiKeyboardLib as msi
 import time
@@ -96,6 +96,7 @@ For the lisp script, all it's doing is taking values from the Gamesense POST dat
 ## Changelog
 #### v0.1
  - initial release
+ 
 #### v1.0
  - added AudioAmplitude.py
  - seperated modules so that it can be used as a library

@@ -2,17 +2,7 @@
 ## https://github.com/CosmicSubspace/MSI-Keyboard-Lights
 ## Licensed under the MIT License.
 
-import requests
-import json
-import os
-import os.path
-import time
-import colorsys
 import sys
-
-
-## https://github.com/SteelSeries/gamesense-sdk
-
 ## This will make it so the console won't close on its own when an exception is raised.
 def show_exception_and_exit(exc_type, exc_value, tb):
     import traceback
@@ -24,6 +14,19 @@ def show_exception_and_exit(exc_type, exc_value, tb):
     sys.exit(-1)
 
 sys.excepthook = show_exception_and_exit
+
+import requests
+import json
+import os
+import os.path
+import time
+import colorsys
+
+
+
+## https://github.com/SteelSeries/gamesense-sdk
+
+
 
 
 ## We need to get the address of the steelseries engine.
