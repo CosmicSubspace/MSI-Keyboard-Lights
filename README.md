@@ -102,3 +102,6 @@ For the lisp script, all it's doing is taking values from the Gamesense POST dat
 #### v1.0
  - added AudioAmplitude.py
  - seperated modules so that it can be used as a library
+
+#### v1.0.1
+ - Import errors no longer cause the console to immediately close.

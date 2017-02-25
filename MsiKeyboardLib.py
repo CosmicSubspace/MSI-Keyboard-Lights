@@ -1,19 +1,18 @@
-## MSI-Keyboard-Lights v1.0 by CosmicSubspace
+## MSI-Keyboard-Lights v1.0.1 by CosmicSubspace
 ## https://github.com/CosmicSubspace/MSI-Keyboard-Lights
 ## Licensed under the MIT License.
 
-import sys
-## This will make it so the console won't close on its own when an exception is raised.
-def show_exception_and_exit(exc_type, exc_value, tb):
+if __name__=="__main__":
+    import sys
     import traceback
-
-    if not str(exc_value)=='name \'exit\' is not defined':
-        print("\n\n---ERROR---\n")
-        traceback.print_exception(exc_type, exc_value, tb)
-        input("\nPress any key to exit.")
-    sys.exit(-1)
-
-sys.excepthook = show_exception_and_exit
+    ## This will make it so the console won't close on its own when an exception is raised.
+    def show_exception_and_exit(exc_type, exc_value, tb):
+        if not str(exc_value)=='name \'exit\' is not defined':
+            print("\n\n---ERROR---\n")
+            traceback.print_exception(exc_type, exc_value, tb)
+            input("\nPress any key to exit.")
+        sys.exit(-1)
+    sys.excepthook = show_exception_and_exit
 
 import requests
 import json
