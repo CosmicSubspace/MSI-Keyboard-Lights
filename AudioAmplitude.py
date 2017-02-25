@@ -97,7 +97,12 @@ def cb(in_data,frame_count,time_info,status_flags):
 
     val_L=(dat[0]/reference/2)**2
     val_R=(dat[1]/reference/2)**2
-    print("L: {:.04f}\tR: {:.04f}\tDeg:{:.01f}".format(val_L,val_R,deg%360))
+    print("L: {:.04f}\tR: {:.04f}".format(val_L,val_R),end="\t")
+
+    vis_n=10
+    textvis_L=min(round(val_L*vis_n),vis_n)
+    textvis_R=min(round(val_R*vis_n),vis_n)
+    print("["+" "*(vis_n-textvis_L)+"#"*textvis_L+" L/R "+"#"*textvis_R+" "*(vis_n-textvis_R)+"]")
 
     deg+=1
 

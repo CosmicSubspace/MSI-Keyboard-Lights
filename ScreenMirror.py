@@ -101,9 +101,9 @@ while True:
         updates=0
 
         ## RGB values of each zones.
-        print(str(kb.L),end="\t")
-        print(str(kb.C),end="\t")
-        print(str(kb.R))
+        print("L"+str(kb.L),end="\t")
+        print("C"+str(kb.C),end="\t")
+        print("R"+str(kb.R))
 
         ## Put the new data into a variable.
         newest_data=msi.prepare_post_data(kb)
