@@ -1,4 +1,4 @@
-## MSI-Keyboard-Lights v1.0.1 by CosmicSubspace
+## MSI-Keyboard-Lights v1.0.1a by CosmicSubspace
 ## https://github.com/CosmicSubspace/MSI-Keyboard-Lights
 ## Licensed under the MIT License.
 
@@ -20,6 +20,7 @@ import os
 import os.path
 import time
 import colorsys
+import urllib.parse
 
 
 
@@ -40,15 +41,19 @@ with open(port_info) as f:
 
 ## Post using Requests, and print the errors.
 def post(addr_append,dat):
-    final_addr=address+addr_append
+    final_addr=urllib.parse.urljoin(address,addr_append)
     #print("\n\nPOST to",final_addr, "\nContents:"+str(dat))
     #r=grequests.post(final_addr, json=dat)
 
     r=requests.post(final_addr, json=dat)
     #print(r.elapsed)
     if r.status_code != 200:
-        print("POST unsuccessful. contents:")
+        print("POST unsuccessful. Status code",r.status_code)
+        print("POST address:",final_addr)
+        print("POST data:",dat)
+        print("-----Response from server-----")
         print(r.text)
+        print("------------------------------")
         raise
     else:
         #print("POST success.")
